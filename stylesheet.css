@@ -1,0 +1,173 @@
+@keyframes droplet {
+    0% {
+        top: -30px
+    }
+    100% {
+        top: 200vh
+    }
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Arima Madurai";
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+#drop {
+    position: fixed;
+    left: 70vw;
+    height: 30px;
+    width: 20px;
+    top: -30px;
+    background-color: white;
+    animation-play-state: paused;
+}
+
+.playing {
+    animation-play-state: running !important;
+}
+
+.anim {
+    animation: droplet 2s infinite ease-in;
+}
+
+#flood {
+    height: 50vh;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -5;
+    transition: height 1s ease-out;
+}
+
+.center {
+    width: 380px;
+    height: 300px;
+    position: absolute;
+    top: 17vw;
+    left: 50%;
+    padding: 25px;
+    transform: translateX(-50%);
+    background-color: black;
+    box-shadow: 0 0 45px -10px black;
+    color: white;
+    z-index: 4;
+}
+
+#settings {
+    color: white !important;
+    box-shadow: none;
+    z-index: 5;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-grow: 5;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+button {
+    background-color: transparent;
+    flex-grow: 1;
+}
+
+button:hover {
+    color: skyblue;
+}
+
+.btn:focus,
+.btn:active {
+    outline: 0 !important;
+}
+
+.btn-lg {
+    font-size: 3em;
+    padding: 0;
+}
+
+.btn:first-of-type {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.btn:last-of-type {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.controls {
+    flex-grow: 1;
+    display: flex;
+}
+
+.fa-times,
+.fa-bars {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.fa-volume-up,
+.fa-volume-off {
+    cursor: pointer;
+}
+
+.input-group {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    background-color: transparent;
+    height: 50px;
+    color: white;
+    font-size: 1.7em;
+    padding-top: 10px;
+}
+
+.input-group-btn> button {
+    height: 50px;
+}
+
+.input-group-btn> button:hover,
+.input-group-btn> button:active,
+.open> .btn-secondary-outline.dropdown-toggle,
+.input-group-btn> button:focus {
+    border-color: skyblue;
+    background-color: transparent;
+}
+
+.btn-secondary-outline {
+    width: 20px;
+}
+
+.btn:last-of-type {
+    padding: 0;
+}
+
+.dropdown-menu {
+    width: 200px;
+    background-color: black;
+}
+
+.dropdown-item {
+    color: white;
+    font-size: 1rem;
+}

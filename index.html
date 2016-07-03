@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pomupomu Timer</title>
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/> -->
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100" rel="stylesheet">
+
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/ce78b4a73c.js"></script>
+
+	<!-- jQuery first, then Bootstrap JS. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+	<!--user-defined external sheets-->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script type="text/javascript" src="scripts.js"></script>
+
+</head>
+
+<body>
+	<div id="drop" class="anim"></div>
+	<div id="flood"></div>
+
+	<!-- Settings Page -->
+	<div class="center flex-column" id="settings">
+		<i class="fa fa-times fa-lg"></i>
+		<div class="flex">
+			<h3>Work</h3>
+		</div>
+		<div class="flex">
+			<div class="input-group">
+				<input type="text" class="form-control" id="input1">
+				<div class="input-group-btn">
+					<button type="button" class="btn btn-secondary-outline dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					</button>
+					<div class="dropdown-menu dropdown-menu-right" id="work">
+						<button class="dropdown-item">20:00</button>
+						<button class="dropdown-item">30:00</button>
+						<button class="dropdown-item">45:00</button>
+						<button class="dropdown-item">60:00</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex">
+			<h3>Break</h3>
+		</div>
+		<div class="flex">
+			<div class="input-group">
+				<input type="text" class="form-control" id="input2">
+				<div class="input-group-btn">
+					<button type="button" class="btn btn-secondary-outline dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					</button>
+					<div class="dropdown-menu dropdown-menu-right" id="break">
+						<button class="dropdown-item">5:00</button>
+						<button class="dropdown-item">10:00</button>
+						<button class="dropdown-item">15:00</button>
+						<button class="dropdown-item">20:00</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex">
+			<i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
+		</div>
+	</div>
+
+	<!-- Timer -->
+	<div class="center flex-column">
+		<i class="fa fa-bars fa-lg"></i>
+		<div class="flex">
+			<h1>25:00</h1>
+		</div>
+		<div class="controls">
+			<button class="btn btn-lg">Start</button>
+			<button class="btn btn-lg">Stop</button>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>
