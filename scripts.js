@@ -6,9 +6,11 @@ var output = "";
 var on = false;
 var breakTime = false;
 var timerID;
+var moveDrop;
 
 
 $(function() {
+    $("#drop").css("left", Math.floor(Math.random() * 101).toString() + "vw");
 
     $("#settings").hide();
 
@@ -78,6 +80,10 @@ $(function() {
     $(".controls button:first-child").click(function() {
         updateScreen();
         if (!on) {
+            moveDrop = window.setInterval(function() {
+                if ($("#drop").offset().top > $(window).height())
+                    $("#drop").css("left", Math.floor(Math.random() * 101).toString() + "vw");
+            }, 200);
             timerID = window.setInterval(function() {
                 seconds--;
                 updateScreen();
@@ -86,6 +92,7 @@ $(function() {
             on = true;
             $("#drop").addClass("playing");
         } else {
+            window.clearInterval(moveDrop);
             window.clearInterval(timerID);
             $(this).text("Start");
             on = false;
